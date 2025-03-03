@@ -14,7 +14,7 @@ using namespace std;
 
 //NOTE : 
 // 1. As a first approx, we use the central wavelengths of the J, H bands to compute the spectral slope. In this version, we calculate the slope using the magnitudes in the J, H bands.
-// 2. We use a salpeter IMF between 1-100 solar masses to compute the spectra using SB99. Please check if this already includes metal emission lines.
+// 2. We use a salpeter IMF between 1-100 solar masses to compute the spectra using SB99. 
 
 // ******************************************************
 // physical constants
