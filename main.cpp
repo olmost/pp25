@@ -131,14 +131,14 @@ return(inte);
 }
 
 // *********************************************************
-// functions to calculate the cooling timescale and the cooling radius, as the minimum between thevirial radius, the cooling radius and the free-fall radius
+// functions to calculate the g timescale and the g radius, as the minimum between thevirial radius, the g radius and the free-fall radius
 // assuming that the total matter density profile follows the hot gas distribution
 // *********************************************************
 
 
-double r_cooling(double f_hot, double mg_hot, double rvir, double vvir, double tvir, double lambda_cooling) { 
+double r_g(double f_hot, double mg_hot, double rvir, double vvir, double tvir, double lambda_g) { 
 
-    double coolr = pow(1.0/6.0 * mg_hot * lambda_cooling / mean_molw / pi / mprot / boltzk / tvir /vvir, 0.5);
+    double coolr = pow(1.0/6.0 * mg_hot * lambda_g / mean_molw / pi / mprot / boltzk / tvir /vvir, 0.5);
     double ffr = pow(8.0/3.0 * rvir/pow(vvir, 2) * G * mg_hot / f_hot / pow(pi, 2), 0.5);
 
     double racc = min(coolr, ffr);
@@ -322,7 +322,7 @@ for(i=0;i<nosteps_mt;i++)
 cout<<"z in mt "<<i<<"\t"<<zsteps_mt[i]<<endl;
 
 // ****************************************************************
-// importing values of cooling function as a function of temperature
+// importing values of g function as a function of temperature
 // ****************************************************************
 
 double metlist[35] = {-3, -2.9, -2.8, -2.7, -2.6, -2.5, -2.4, -2.3, -2.2, -2.1, 2.0, -1.9, -1.8, -1.7, -1.6, -1.5, -1.4, -1.3, -1.2, -1.1, -1.0, -0.9, -0.8, -0.7, -0.6, -0.5, -0.4, -0.3, -0.2, -0.1, 0.0, 0.1, 0.2, 0.3, 0.4};
