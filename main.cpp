@@ -333,7 +333,7 @@ int ncols = 36;
 double coolf_matrix[90][36] {};
 
 ifstream fin1k;
-fin1k.open("lambda_cooling_tot.dat",ios::in); 
+fin1k.open("cooling_functions/lambda_cooling_tot.dat",ios::in); 
 
 for (i=0; i<nlines; i++) {
     for (j=0; j<ncols; j++) {
