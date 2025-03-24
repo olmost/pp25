@@ -355,7 +355,7 @@ int *id_parent_mt = new int[nomt];
 int *flag = new int[nomt];
 lenth_file=0;
 
-ifstream fin1a("mt_parkinson_z20_z1_step20myr_20dex_9to15.dat",ios::in); // 
+ifstream fin1a("code_20to1_1halo/mt_parkinson_z20_z1_step20myr_1halo_14msun_8mres.dat",ios::in); // 
     while(!fin1a.eof())
      {
 	      fin1a>>zp_mt[lenth_file] // redshift of the halo
