@@ -41,4 +41,4 @@ cooling_functions/lambda_cooling_tot.dat: cooling functions as a function of tem
 column 0: log temperature  
 column 1-35: log cooling rate 
 
-z_list.dat: list of redshift steps of the merger tree and hence of the simulation. Steps are separated by 20 Myr
+z_list_22_to_1_step20myr.dat: list of redshift steps of the merger tree and hence of the simulation. Steps are separated by 20 Myr
