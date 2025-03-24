@@ -12,7 +12,7 @@ The required input files are:
 mt_parkinson_z20_z1_step20myr_9to15.dat or similar: contains the full merger trees from z=20 to z=1 for 120 halos from mass 10^9 to 10^15 solar masses, bin size is 0.05 in log mass. Resolution mass is 10^9 solar masses. Merger trees are built according to the algorithm derived in Parkinson et al. 2008.
 You can create the merger tree input file by running the fortran code contained in the folder code_20to1_1halo (it will mcompute the merger tree of one single halo). To run this you can do
 
-make trees.exe
+make trees.exe \\
 ./trees.exe
 
 The file will have 5 columns:
