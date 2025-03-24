@@ -1017,7 +1017,7 @@ for (int i = galnmin; i < galnmax; i++) { //t runs across the different merger t
         uvflux_rat[j] = bh_L1375[j] / lconts_int[j];
 
         if (main_branch_flag[j] == 1)
-            cout << zp_mt[j] << "\t" << mhp_mt[j] << "\t" << bhmain[j] << "\t" << mgi_cold[j] << "\t" << mgf_cold[j] << "\t" << mgi_hot[j] << "\t" << mgf_hot[j] << "\t" << mgcool_new[j] << "\t" << tvir[i] << "\t" << coolf_matrix[0][0] << "\t" << lambda_tempbin << "\t" << zhot_to_zsun << "\t" << metlist[0] << "\t" << lambda_metbin << "\t" << log10(met_star[j]/mstarfb_int[j]/met_sun) << endl;
+            cout << zp_mt[j] << "\t" << mhp_mt[j] << "\t" << bhmain[j] << "\t" << mgi_cold[j] << "\t" << mgf_cold[j] << "\t" << mgi_hot[j] << "\t" << mgf_hot[j] << "\t" << mgcool_new[j] << "\t" << tvir[i] << "\t" << log10(met_star[j]/mstarfb_int[j]/met_sun) << endl;
 
     }}
 
