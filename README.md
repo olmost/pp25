@@ -9,21 +9,19 @@ g++-12 -o exe main.cpp ./exe
 
 The required input files are:
 
-mt_parkinson_z20_z1_step20myr_9to15.dat: contains the full merger trees from z=20 to z=1 for 120 halos from mass 10^9 to 10^15 solar masses, bin size is 0.05 in log mass. Resolution mass is 10^9 solar masses. Merger trees are built according to the algorithm derived in Parkinson et al. 2008.
+mt_parkinson_z20_z1_step20myr_9to15.dat or similar: contains the full merger trees from z=20 to z=1 for 120 halos from mass 10^9 to 10^15 solar masses, bin size is 0.05 in log mass. Resolution mass is 10^9 solar masses. Merger trees are built according to the algorithm derived in Parkinson et al. 2008.
+You can create the merger tree input file by running the fortran code contained in the folder code_20to1_1halo (it will mcompute the merger tree of one single halo). To run this you can do
+
+make trees.exe
+./trees.exe
+
+The file will have 5 columns:
 
 column 0 = zp_mt: redshift of the halo 
 column 1 = mhp_mt: halo mass column 2 = idp_mt: halo id 
-column 3 = id_parent_mt: id of the first successor (i.e. son) of the halo. Note that multiple halos might have same son 
-column 4 = flag: -1 if the halo is a first leaf (i.e. has no progenitor), 0 otherwise 
-column 5 = id_main_prog: id of the most massive progenitor of the halo
-
-DUE TO SIZE LIMITATIONS, THIS COULD NOT BE UPLOADED TO GITHUB. CONTACT ME AT olmost91 at gmail.com FOR FURTHER REQUESTS.
-
-dcbh_id_lw30.dat: contains the id of the halos (only first leaves) which host a direct-collapse black hole (DCBH) seed, computed according to Dayal et al. 2017. For more information about DCBH see for instance Valiante+ 2016, Habouzit+2016 and references therein.
-
-column 0 = redshift of the halo with DCBH seed 
-column 1 = id of the halo 
-column 2 = number density of the halo (Mpc^-3)
+column 2 = id_parent_mt: id of the first successor (i.e. son) of the halo. Note that multiple halos might have same son 
+column 3 = flag: -1 if the halo is a first leaf (i.e. has no progenitor), 0 otherwise 
+column 4 = id_main_prog: id of the most massive progenitor of the halo
 
 sal_pt1_100_lc_lw_q.txt: contains information about the UV luminosity emitted by an instantaneous star formation event of 10^6 solar masses, assuming a Salpeter IMF between 1 and 100 solar masses and a gas metallicity Z = 0.05. Computed using the online software STARBURST99 (Leitherer+ 1999).
 
@@ -37,7 +35,7 @@ dndlogm_solarm_vs_mpcm3_op_z1.txt: the Sheth-Tormen theoretical halo mass functi
 column 0: halo mass 
 column 1: number density of halos of that mass (dN/d ln M)
 
-lambda_cooling_tot.dat: cooling functions as a function of temperature interpolated to obtain the results for metallicities log(Z) = [-3; 0.5; step = 0.1] (interpolated from the results found in Table 5 and onwards of Sutherland & Dopita 1993)
+cooling_functions/lambda_cooling_tot.dat: cooling functions as a function of temperature interpolated to obtain the results for metallicities log(Z) = [-3; 0.5; step = 0.1] (interpolated from the results found in Table 5 and onwards of Sutherland & Dopita 1993)
 
 column 0: log temperature 
 column 1-35: log cooling rate
