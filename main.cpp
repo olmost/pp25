@@ -136,7 +136,7 @@ return(inte);
 // *********************************************************
 
 
-double r_g(double f_hot, double mg_hot, double rvir, double vvir, double tvir, double lambda_g) { 
+double r_cooling(double f_hot, double mg_hot, double rvir, double vvir, double tvir, double lambda_g) { 
 
     double coolr = pow(1.0/6.0 * mg_hot * lambda_g / mean_molw / pi / mprot / boltzk / tvir /vvir, 0.5);
     double ffr = pow(8.0/3.0 * rvir/pow(vvir, 2) * G * mg_hot / f_hot / pow(pi, 2), 0.5);
@@ -520,8 +520,8 @@ cout<<"length spec is "<<nol_spec<<endl;
 // defining the model parameters and variables
 // ****************************************
 
-int galnmin = 120;
-int galnmax = 121;
+int galnmin = 0;
+int galnmax = 1;
 
 double tstep = 20.0 * Myr; // time step of the merger tree
 double sf_eff = 0.02; // maximum star formation efficiency
