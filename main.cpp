@@ -1061,7 +1061,7 @@ for (i = galnmin; i < galnmax; i++) {
     
     	if (main_branch_flag[j] == 1) {
 	
-        foutmacchianera	<< zp_mt[j] << "\t" << mhp_mt[j] << "\t" << 1.0-(mh_int[j]/pow(10.0, mhp_mt[j])) << "\t" << mgacc_int[j] << "\t" << mstarfb_int[j] << "\t" << mgacc_new[j] << "\t" << mstarfb_new[j] << "\t" << nprog[j] << "\t" << mgout_sf_int[j] << "\t" << mgout_agn_int[j] << "\t" << bhenergy[j] << "\t" << bhmain[j] << "\t" << nd_gal[i] << "\t" << accrat[j] << "\t" << bhaccmass[j] << "\t" << bh_L1375[j] << "\t" << mgout_sf_new[j] << "\t" << mgout_agn_new[j] << "\t" << bondi_acc_mass_int[j] << "\t" << bondi_acc_mass_new[j] << "\t" << mgi_cold[j] << "\t" << mgi_hot[j] << "\t" << mgcool_new[j] << "\t" << mgcool_int[j] << "\t" << jet_power[j] << "\t" << mg_heated[j] << "\t" << mg_res[j] << endl;}}}
+        foutmacchianera	<< zp_mt[j] << "\t" << mhp_mt[j] << "\t" << 1.0-(mh_int[j]/pow(10.0, mhp_mt[j])) << "\t" << mgacc_int[j] << "\t" << mgacc_new[j] << "\t" << mstarfb_int[j] << "\t" << mstarfb_new[j] << "\t" << nprog[j] << "\t" << mgout_sf_int[j] << "\t" << mgout_agn_int[j] << "\t" << bhenergy[j] << "\t" << bhmain[j] << "\t" << nd_gal[i] << "\t" << accrat[j] << "\t" << bhaccmass[j] << "\t" << bh_L1375[j] << "\t" << mgout_sf_new[j] << "\t" << mgout_agn_new[j] << "\t" << bondi_acc_mass_int[j] << "\t" << bondi_acc_mass_new[j] << "\t" << mgi_cold[j] << "\t" << mgi_hot[j] << "\t" << mgcool_new[j] << "\t" << mgcool_int[j] << "\t" << jet_power[j] << "\t" << mg_heated[j] << "\t" << mg_res[j] << endl;}}}
 
 foutmacchianera.close();
 
@@ -1075,7 +1075,7 @@ for (int w = 0; w < 13; w++) {
         
             if (zp_mt[j] == lenzlist2[w]) {
             
-		foutpippo << << zp_mt[j] << "\t" << mhp_mt[j] << "\t" << 1.0-(mh_int[j]/pow(10.0, mhp_mt[j])) << "\t" << mgacc_int[j] << "\t" << mstarfb_int[j] << "\t" << mgacc_new[j] << "\t" << mstarfb_new[j] << "\t" << nprog[j] << "\t" << mgout_sf_int[j] << "\t" << mgout_agn_int[j] << "\t" << bhenergy[j] << "\t" << bhmain[j] << "\t" << nd_gal[i] << "\t" << accrat[j] << "\t" << bhaccmass[j] << "\t" << bh_L1375[j] << "\t" << mgout_sf_new[j] << "\t" << mgout_agn_new[j] << "\t" << bondi_acc_mass_int[j] << "\t" << bondi_acc_mass_new[j] << "\t" << mgi_cold[j] << "\t" << mgi_hot[j] << "\t" << mgcool_new[j] << "\t" << mgcool_int[j] << "\t" << jet_power[j] << "\t" << mg_heated[j] << "\t" << mg_res[j] << endl;}}}
+		foutpippo << zp_mt[j] << "\t" << mhp_mt[j] << "\t" << 1.0-(mh_int[j]/pow(10.0, mhp_mt[j])) << "\t" << mgacc_int[j] << "\t" << mgacc_new[j] << "\t" << mstarfb_int[j] << "\t" << mstarfb_new[j] << "\t" << nprog[j] << "\t" << mgout_sf_int[j] << "\t" << mgout_agn_int[j] << "\t" << bhenergy[j] << "\t" << bhmain[j] << "\t" << nd_gal[i] << "\t" << accrat[j] << "\t" << bhaccmass[j] << "\t" << bh_L1375[j] << "\t" << mgout_sf_new[j] << "\t" << mgout_agn_new[j] << "\t" << bondi_acc_mass_int[j] << "\t" << bondi_acc_mass_new[j] << "\t" << mgi_cold[j] << "\t" << mgi_hot[j] << "\t" << mgcool_new[j] << "\t" << mgcool_int[j] << "\t" << jet_power[j] << "\t" << mg_heated[j] << "\t" << mg_res[j] << endl;}}}
                  
      foutpippo.close();}
 
