@@ -42,3 +42,37 @@ column 0: log temperature
 column 1-35: log cooling rate 
 
 z_list_22_to_1_step20myr.dat: list of redshift steps of the merger tree and hence of the simulation. Steps are separated by 20 Myr
+
+OUTPUT FILES
+
+main_branch_allgalaxies.dat: contains information about halos and galaxies belonging to the main branch of the merger tree. Currently structured as follows. Note all masses are reported in solar masses
+
+column 0: redshift 
+column 1: log halo mass 
+column 2: fraction of halo mass smoothly accreted from intergalactic space (as opposed to the mass accreted through mergers)
+column 3: cumulative (i.e. integrated across all time steps up to the current one) gas mass accreted onto the galaxy from igm and reservoir
+column 4: instantaneous (i.e. pertaining only to the current time step) gas mass accreted onto the galaxy from igm and reservoir
+column 5: total stellar mass
+column 6: new stellar mass formed in the current time step
+column 7: number of progenitors of the halo
+column 8: cumulative gas mass ejected due to SN feedback
+column 9: cumulative gas mass ejected due to AGN feedback
+column 10: radiative energy emitted by the black hole (erg/s)
+column 11: black hole mass
+column 12: number density of the halo (mpc^-3)
+column 13: eddington ratio
+column 14: total (hot + cold) gas mass accreted by the black hole during the current time step
+column 15: UV energy radiated by the black hole (erg/s)
+column 16: instantaneous gas mass ejected due to SN feedback
+column 17: instantaneous gas mass ejected due to AGN feedback
+column 18: cumulative mass accreted by the black hole through Bondi accretion (i.e. from the hot gas)
+column 19: instantaneous mass accreted by the black hole through Bondi accretion
+column 20: cold gas mass present in the galaxy at the beginning of the time step
+column 21: hot gas mass present in the galaxy at the beginning of the time step
+column 22: instantaneous cooled gas mass (i.e. amount of gas passing from the hot to the cold phase)
+column 23: cumulative cooled gas mass
+column 24: jet power (erg/s)
+column 25: instantaneous heated gas mass (i.e. amount of gas passing from the cold to the hot phase)
+column 26: gas mass present in the gas reservoir
+
+The other phyprop_... files contain information about all halos present at the time step indicated in the file name, structured in the same way as in the main_branch_allgalaxies.dat file
