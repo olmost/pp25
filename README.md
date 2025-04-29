@@ -1,7 +1,7 @@
 # pp25
 Code of the model used in the Piana, Pu 2025 paper. First version of JET
 
-The main file to compile and run is op_hp_main.cpp
+The main file to compile and run is main.cpp
 
 In the terminal, you can type
 
